@@ -1,0 +1,5 @@
+El fichero se guarda en la ruta que pongas.
+
+Si pones "usuario.json", se guarda en la carpeta del proyecto.
+
+Si pones una ruta completa, entonces se guarda directamente en esa ruta.
