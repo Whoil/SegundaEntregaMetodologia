@@ -3,7 +3,7 @@ package ParteA.Manejo.Excepciones.try_catch_finally;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-public class TryCatchFinally {
+public class TryCatchFinallyPrimerEjemplo {
     public static void main(String[] args) {
         try {
             System.out.println("Start of the main logic");
