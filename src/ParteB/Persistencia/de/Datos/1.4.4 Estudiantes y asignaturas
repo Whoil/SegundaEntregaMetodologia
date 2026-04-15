@@ -1,0 +1,8 @@
+El fichero resultante al guardar una asignatura tiene esta estructura:
+{"nombre":"Metodologia de la Programacion","estudiantes":[{"nombre":"Alvaro","edad":19,"matricula":"E001"},{"nombre":"Lucia","edad":18,"matricula":"E002"},{"nombre":"Pablo","edad":20,"matricula":"E003"}]}
+
+Para probar si al modificar el archivo .json cambia el objeto creamos un programa TestAsignaturaLectura que solo lea el fichero. Así vemos que modificando en el fichero el nombre de Lucía y sustituyéndolo por María,
+al cargar de nuevo en este modo de solo lectura obtenemos un nuevo objeto:
+
+Asignatura[nombre=Metodologia de la Programacion, estudiantes=Estudiante[nombre=Alvaro, edad=19, matricula=E001], Estudiante[nombre=María, edad=18, matricula=E002], Estudiante[nombre=Pablo, edad=20, matricula=E003]]
+

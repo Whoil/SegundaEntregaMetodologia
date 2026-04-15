@@ -1,0 +1,7 @@
+Existen otras maneras de transformar objetos java en datos para ser almacenados o enviados a la red, aparte de Json.
+Entre ellas están la serialización nativa con clases que implementan Serializable, usando ObjectOutputStream y ObjectInputStream;
+serialización nativa con Externalizable; con XMLEncoder y XMLDecoder, etc.
+
+La principal diferencia es que JSON hace que los ficheros que se crear sean legibles y editables mientras que las otras formas de serialización
+de Java usan formato binario, guardando los datos como bytes, haciendo que el ordenador los lea más fácilmente, es decir, no están pensados para leerse
+como en el caso de JSON.

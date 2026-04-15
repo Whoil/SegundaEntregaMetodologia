@@ -1,0 +1,4 @@
+Para este ejercicio hemos usado la clase Book, que contiene un array de objetos de la clase Author.
+Al guardar el objeto book en JSON, no se guardan solo los atributos del book sino también los correspondientes
+a los autores. Al cargar de nuevo el fichero JSON vemos que el objeto se reconstruye correctamente, manteniendo
+los autores a los que contenía.

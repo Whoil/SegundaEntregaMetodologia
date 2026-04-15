@@ -1,0 +1,4 @@
+En el ejemplo de Book, vemos como authors se almacena como un array, teniendo esta forma:
+[{"name":"Álvaro","email":"alvaro@gmail.com","gender":"M"},{"name":"Luis","email":"luis@gmail.com","gender":"M"}].
+Es decir, el resultado de guardar un array en JSON es una lista JSON, entre corchetes. En este caso estaba guardado en
+el objeto book (array dentro de objeto), por lo que aparece dentro de la estructura de este, pero manteniendo el formato de lista con corchetes.
