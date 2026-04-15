@@ -1,0 +1,12 @@
+Pues el static se usa básicamente porque esta clase no está pensada para crear objetos,
+sino para tener métodos que se usan directamente, como utilidades.
+Entonces, en vez de hacer un new GsonUtilEjemplo(), puedes llamar a los métodos tal cual y ya, que es más cómodo.
+
+El main es static porque Java obliga a que sea así para poder ejecutar el programa.
+
+Luego lo de static class Usuario es para que esa clase no dependa de la clase de fuera.
+Si no fuera static, haría falta crear primero un objeto de la clase principal para poder usar Usuario, y sería un lío,
+sobre todo porque estamos dentro de un main que es estático. Así como está, funciona como una clase normal y ya.
+
+Y en cuanto a lo que hace el código, básicamente crea un objeto, lo guarda en un archivo en formato JSON usando Gson,
+y luego lo vuelve a leer y lo reconstruye. Es como pasar el objeto a texto y luego volver a convertirlo en objeto otra vez.
