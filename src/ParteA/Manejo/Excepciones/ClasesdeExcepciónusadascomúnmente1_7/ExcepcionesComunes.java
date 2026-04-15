@@ -2,10 +2,10 @@ package ParteA.Manejo.Excepciones.ClasesdeExcepciónusadascomúnmente1_7;
 
 public class ExcepcionesComunes {
     public static void ProbarArrayIndexOutOfBoundsException() {
-        try{
-        int[] AnArray = new int[3];
-        System.out.println(AnArray[3]);
-        }catch (ArithmeticException ex){
+        try {
+            int[] anArray = new int[3];
+            System.out.println(anArray[3]);
+        } catch (ArrayIndexOutOfBoundsException ex) {
             System.out.println("ArrayIndexOutOfBoundsException");
             System.out.println(ex.getMessage());
         }
