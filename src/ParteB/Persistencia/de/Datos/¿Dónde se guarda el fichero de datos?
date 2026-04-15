@@ -1,3 +1,5 @@
+¿Dónde se guarda el fichero de datos?
+
 El fichero se guarda en la ruta que pongas.
 
 Si pones "usuario.json", se guarda en la carpeta del proyecto.
