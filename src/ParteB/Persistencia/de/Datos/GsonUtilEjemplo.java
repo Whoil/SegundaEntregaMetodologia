@@ -7,52 +7,54 @@ import java.io.IOException;
 
 public class GsonUtilEjemplo {
 
-    // guarda un objeto en un archivo json
+    // Método genérico: guardo cualquier objeto en un JSON
     public static <T> void guardarObjetoEnArchivo(String rutaArchivo, T objeto) {
-        Gson gson = new Gson();
+        Gson gson = new Gson(); // creo Gson
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
-            gson.toJson(objeto, writer);
+            gson.toJson(objeto, writer); // convierto y lo escribo en el fichero
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // si falla, saco el error
         }
     }
 
-    // lee un objeto desde un archivo json
+    // Método genérico: leo un objeto desde un JSON
     public static <T> T cargarObjetoDesdeArchivo(String rutaArchivo, Class<T> clase) {
-        Gson gson = new Gson();
+        Gson gson = new Gson(); // creo Gson
         try (FileReader reader = new FileReader(rutaArchivo)) {
-            return gson.fromJson(reader, clase);
+            return gson.fromJson(reader, clase); // leo y lo convierto al tipo que quiero
         } catch (IOException e) {
-            e.printStackTrace();
-            return null;
+            e.printStackTrace(); // si falla, saco el error
+            return null; // devuelvo null si no se puede leer
         }
     }
 
     public static void main(String[] args) {
 
-        // creamos un usuario de prueba
+        // Creo un usuario de prueba
         Usuario usuario = new Usuario("Juan", 30, "juan@example.com");
 
-        // nombre del archivo
+        // Ruta del archivo donde voy a guardar
         String rutaArchivo = "usuario.json";
 
-        // guardamos el usuario
+        // Guardo el usuario en el JSON
         guardarObjetoEnArchivo(rutaArchivo, usuario);
 
-        // lo volvemos a cargar
+        // Lo vuelvo a cargar desde el fichero
         Usuario usuarioCargado = cargarObjetoDesdeArchivo(rutaArchivo, Usuario.class);
 
+        // Compruebo que se haya cargado bien
         if (usuarioCargado != null) {
             System.out.println("Usuario cargado: " + usuarioCargado.nombre);
         }
     }
 
-    // clase usuario para el ejemplo
+    // Clase interna para representar un usuario
     static class Usuario {
         String nombre;
         int edad;
         String correo;
 
+        // Constructor: inicializo los datos
         public Usuario(String nombre, int edad, String correo) {
             this.nombre = nombre;
             this.edad = edad;
