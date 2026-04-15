@@ -1,3 +1,5 @@
+package ParteB.Persistencia.de.Datos;
+
 import com.google.gson.Gson;
 import ParteB.Persistencia.de.Datos.Persona;
 
