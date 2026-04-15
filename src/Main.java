@@ -46,7 +46,7 @@ public class Main {
            System.out.println(ex.getMessage());
        }
 
-        System.out.println("\n===== 1.5 OPERACIONES DE MANEJO DE EXCEPCIONES =====");
+        System.out.println("\n== 1.5 Operaciones De Manejo De Excepciones ==");
         OperacionesdeManejoDeExcepciones.ProbarConCatch();
 
         try {
@@ -56,7 +56,7 @@ public class Main {
             System.out.println(ex.getMessage());;
         }
 
-        System.out.println("\n===== 1.6 TRY-CATCH-FINALLY =====");
+        System.out.println("\n== 1.6 Try-Catch-Finally ==");
         TryCatchFinallyPrimerEjemplo.main(new String[0]);
 
         try {
@@ -66,7 +66,7 @@ public class Main {
             System.out.println(ex.getMessage());
         }
 
-        System.out.println("\n===== 1.7 EXCEPCIONES COMUNES =====");
+        System.out.println("\n== 1.7 Execpciones Comunes==");
         ExcepcionesComunes.ProbarArrayIndexOutOfBoundsException();
         ExcepcionesComunes.ProbarNullPointerException();
         ExcepcionesComunes.ProbarNumberFormatException();
@@ -74,7 +74,7 @@ public class Main {
         ExcepcionesComunes.ProbarIllegalArgumentException(-5);
         ExcepcionesComunes.ProbarIllegalStateException();
 
-        System.out.println("\n===== 1.8 EXCEPCIONES PROPIAS =====");
+        System.out.println("\n== 1.8 Excepciones Propias ==");
         ExcepcionesPropiasTest.ProbarVerificaciónDeContraseña();
         ExcepcionesPropiasTest.ProbarVerificaciónEdad();
     }
