@@ -4,6 +4,9 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 public class TryCatchFinallyPrimerEjemplo {
+
+    // Ejemplo de try-catch-finally.
+    // Demuestra que finally se ejecuta siempre, haya o no haya excepción.
     public static void main(String[] args) {
         try {
             System.out.println("Start of the main logic");
@@ -13,6 +16,7 @@ public class TryCatchFinallyPrimerEjemplo {
             System.out.println("End of the main logic");
         } catch (FileNotFoundException ex) {
             System.out.println("File Not Found caught ...");
+            // El bloque finally se ejecuta siempre y suele usarse para limpieza.
         } finally {
             System.out.println("finally-block runs regardless of the state of exception");
         }

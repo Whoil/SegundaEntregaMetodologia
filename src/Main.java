@@ -1,3 +1,7 @@
+
+// Clase principal que ejecuta todos los ejemplos de la práctica.
+
+
 import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFile;
 import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFileWithCatch;
 import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFileWithThrow;
@@ -13,7 +17,7 @@ import ParteA.Manejo.Excepciones.try_catch_finally1_6.MethodCallStackDemoWithFin
 import ParteA.Manejo.Excepciones.ClasesdeExcepciónusadascomúnmente1_7.ExcepcionesComunes;
 import ParteA.Manejo.Excepciones.Clases.de.Excepciones.Propias1_8.ExcepcionesPropiasTest;
 
-
+// Método principal que lanza todos los ejemplos de excepciones.
 public class Main {
     public static void main(String[] args){
         System.out.println("== 1.1 Introducción ==");

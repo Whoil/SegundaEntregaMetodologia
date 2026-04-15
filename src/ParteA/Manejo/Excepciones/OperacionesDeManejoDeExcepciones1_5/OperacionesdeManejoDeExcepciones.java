@@ -1,6 +1,10 @@
 package ParteA.Manejo.Excepciones.OperacionesDeManejoDeExcepciones1_5;
-public class OperacionesdeManejoDeExcepciones{
 
+
+// Clase que demuestra las operaciones básicas de manejo de excepciones:
+// declarar con throws, lanzar con throw y capturar con catch.
+
+public class OperacionesdeManejoDeExcepciones{
     public static void VerificaciónDeContraseña(String contraseña)  throws Exception{
 
         // Metodo que comprueba si la contrasena introducida es correcta.
@@ -30,8 +34,8 @@ public class OperacionesdeManejoDeExcepciones{
     }
 
     // Ejemplo de uso con throws.
-    // Aqui la excepcion no se captura, sino que se propaga
-    // al metodo superior que llame a este.
+    // Aquí la excepción no se captura, sino que se propaga
+    // al método superior que llame a este.
 
     public static void ProbarConThrow() throws Exception {
 
