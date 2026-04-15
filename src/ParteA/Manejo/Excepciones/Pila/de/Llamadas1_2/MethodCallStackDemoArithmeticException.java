@@ -1,5 +1,9 @@
 package ParteA.Manejo.Excepciones.Pila.de.Llamadas1_2;
 
+// Ejemplo que muestra cómo una excepción recorre la pila de llamadas.
+// La división entre 0 provoca una ArithmeticException.
+
+
 public class MethodCallStackDemoArithmeticException {
     public static void main(String[] args) {
         System.out.println("Enter main()");
@@ -21,7 +25,9 @@ public class MethodCallStackDemoArithmeticException {
 
     public static void methodC() {
         System.out.println("Enter methodC()");
-        System.out.println(1 / 0);  // divide-by-0 triggers an ArithmeticException
+
+        // Esta operación lanza una ArithmeticException a propósito al dividir por 0.
+        System.out.println(1 / 0);
         System.out.println("Exit methodC()");
     }
 

@@ -1,3 +1,7 @@
+
+// Clase principal que ejecuta todos los ejemplos de la práctica.
+
+
 import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFile;
 import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFileWithCatch;
 import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFileWithThrow;
@@ -13,7 +17,7 @@ import ParteA.Manejo.Excepciones.try_catch_finally1_6.MethodCallStackDemoWithFin
 import ParteA.Manejo.Excepciones.ClasesdeExcepciónusadascomúnmente1_7.ExcepcionesComunes;
 import ParteA.Manejo.Excepciones.Clases.de.Excepciones.Propias1_8.ExcepcionesPropiasTest;
 
-
+// Método principal que lanza todos los ejemplos de excepciones.
 public class Main {
     public static void main(String[] args){
         System.out.println("== 1.1 Introducción ==");
@@ -42,7 +46,7 @@ public class Main {
            System.out.println(ex.getMessage());
        }
 
-        System.out.println("\n===== 1.5 OPERACIONES DE MANEJO DE EXCEPCIONES =====");
+        System.out.println("\n== 1.5 Operaciones De Manejo De Excepciones ==");
         OperacionesdeManejoDeExcepciones.ProbarConCatch();
 
         try {
@@ -52,7 +56,7 @@ public class Main {
             System.out.println(ex.getMessage());;
         }
 
-        System.out.println("\n===== 1.6 TRY-CATCH-FINALLY =====");
+        System.out.println("\n== 1.6 Try-Catch-Finally ==");
         TryCatchFinallyPrimerEjemplo.main(new String[0]);
 
         try {
@@ -62,7 +66,7 @@ public class Main {
             System.out.println(ex.getMessage());
         }
 
-        System.out.println("\n===== 1.7 EXCEPCIONES COMUNES =====");
+        System.out.println("\n== 1.7 Execpciones Comunes==");
         ExcepcionesComunes.ProbarArrayIndexOutOfBoundsException();
         ExcepcionesComunes.ProbarNullPointerException();
         ExcepcionesComunes.ProbarNumberFormatException();
@@ -70,7 +74,7 @@ public class Main {
         ExcepcionesComunes.ProbarIllegalArgumentException(-5);
         ExcepcionesComunes.ProbarIllegalStateException();
 
-        System.out.println("\n===== 1.8 EXCEPCIONES PROPIAS =====");
+        System.out.println("\n== 1.8 Excepciones Propias ==");
         ExcepcionesPropiasTest.ProbarVerificaciónDeContraseña();
         ExcepcionesPropiasTest.ProbarVerificaciónEdad();
     }

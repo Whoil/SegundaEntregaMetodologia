@@ -4,6 +4,11 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 public class ScannerFromFileWithThrow {
+
+    // Ejemplo de propagación de excepciones con throws.
+    // Aquí no se captura la excepción, sino que se declara para que
+    // la maneje un método superior.
+
     public static void main(String[] args) throws FileNotFoundException {
             Scanner in = new Scanner(new File("test.in"));
         System.out.println("Fichero abierto correctamente");
