@@ -1,4 +1,4 @@
-package ParteB.Persistencia.de.Datos;
+package ParteB.Persistencia.De.Datos;
 
 public class MainLeerUsuario {
     public static void main(String[] args) {
