@@ -26,8 +26,8 @@ public class MethodCallStackDemoArithmeticException {
     public static void methodC() {
         System.out.println("Enter methodC()");
 
-        // Esta operación lanza una ArithmeticException a propósito.
-        System.out.println(1 / 0);  // divide-by-0 triggers an ArithmeticException
+        // Esta operación lanza una ArithmeticException a propósito al dividir por 0.
+        System.out.println(1 / 0);
         System.out.println("Exit methodC()");
     }
 

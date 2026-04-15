@@ -1,13 +1,12 @@
 package ParteA.Manejo.Excepciones.Clases.de.Excepciones.Propias1_8;
 
 public class MyMagicExceptionTest {
-    // This method "throw MyMagicException" in its body.
-    // MyMagicException is checked and need to be declared in the method's signature
+    //Ejemplo copiado de la hoja
     public static void magic(int number) throws MyMagicException {
         if (number == 8) {
             throw (new MyMagicException("you hit the magic number"));
         }
-        System.out.println("hello");  // skip if exception triggered
+        System.out.println("hello");
     }
 
     public static void main(String[] args) {
