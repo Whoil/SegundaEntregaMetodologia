@@ -41,7 +41,8 @@ public class Main {
         try {
             OperacionesdeManejoDeExcepciones.ProbarConThrow();
         } catch (Exception ex) {
-            ex.printStackTrace();
+            System.out.println("Excepcion capturada en ProbarConThrow");
+            System.out.println(ex.getMessage());;
         }
 
         System.out.println("\n===== 1.6 TRY-CATCH-FINALLY =====");
