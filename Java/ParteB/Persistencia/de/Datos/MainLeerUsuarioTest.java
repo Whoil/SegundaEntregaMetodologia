@@ -1,6 +1,5 @@
 package ParteB.Persistencia.de.Datos;
 
-import ParteB.Persistencia.De.Datos.MainLeerUsuario;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;

@@ -1,4 +1,4 @@
-package ParteB.Persistencia.De.Datos;
+package ParteB.Persistencia.de.Datos;
 
 import com.google.gson.Gson;
 
