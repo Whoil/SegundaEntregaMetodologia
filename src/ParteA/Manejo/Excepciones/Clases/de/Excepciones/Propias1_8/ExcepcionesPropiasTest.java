@@ -1,4 +1,4 @@
-package ParteA.Manejo.Excepciones.Clases.de.Excepciones.Propias1_7;
+package ParteA.Manejo.Excepciones.Clases.de.Excepciones.Propias1_8;
 
 public class ExcepcionesPropiasTest {
     public static void VerificaciónDeContraseña(String contraseña)  throws ContrasenaIncorrectaException{
