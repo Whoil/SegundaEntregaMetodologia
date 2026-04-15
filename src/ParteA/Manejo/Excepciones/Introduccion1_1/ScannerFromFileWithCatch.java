@@ -1,4 +1,4 @@
-package ParteA.Manejo.Excepciones.Introduccion;
+package ParteA.Manejo.Excepciones.Introduccion1_1;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;

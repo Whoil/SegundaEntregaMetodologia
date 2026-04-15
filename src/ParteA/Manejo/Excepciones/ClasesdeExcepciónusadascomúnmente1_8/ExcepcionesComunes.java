@@ -1,4 +1,4 @@
-package ParteA.Manejo.Excepciones.ClasesdeExcepciónusadascomúnmente;
+package ParteA.Manejo.Excepciones.ClasesdeExcepciónusadascomúnmente1_8;
 
 public class ExcepcionesComunes {
     public static void ProbarArrayIndexOutOfBoundsException() {

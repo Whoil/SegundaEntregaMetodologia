@@ -1,4 +1,4 @@
-package ParteA.Manejo.Excepciones.try_catch_finally;
+package ParteA.Manejo.Excepciones.try_catch_finally1_6;
 
 public class MethodCallStackDemoWithFinally {
         public static void main(String[] args) {

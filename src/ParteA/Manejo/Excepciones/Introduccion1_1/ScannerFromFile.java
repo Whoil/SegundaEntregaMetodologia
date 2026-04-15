@@ -1,8 +1,4 @@
-package ParteA.Manejo.Excepciones.Introduccion;
-
-
-import java.util.Scanner;
-import java.io.File;
+package ParteA.Manejo.Excepciones.Introduccion1_1;
 
 
 public class ScannerFromFile {

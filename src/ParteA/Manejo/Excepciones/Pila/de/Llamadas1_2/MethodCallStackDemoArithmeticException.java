@@ -1,4 +1,4 @@
-package ParteA.Manejo.Excepciones.Pila.de.Llamadas;
+package ParteA.Manejo.Excepciones.Pila.de.Llamadas1_2;
 
 public class MethodCallStackDemoArithmeticException {
     public static void main(String[] args) {

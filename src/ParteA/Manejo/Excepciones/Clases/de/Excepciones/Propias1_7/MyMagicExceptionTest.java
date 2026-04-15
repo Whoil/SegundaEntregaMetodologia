@@ -1,4 +1,4 @@
-package ParteA.Manejo.Excepciones.Clases.de.Excepciones.Propias;
+package ParteA.Manejo.Excepciones.Clases.de.Excepciones.Propias1_7;
 
 public class MyMagicExceptionTest {
     // This method "throw MyMagicException" in its body.

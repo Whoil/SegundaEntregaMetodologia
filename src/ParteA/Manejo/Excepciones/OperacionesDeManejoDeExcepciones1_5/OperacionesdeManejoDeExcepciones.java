@@ -1,4 +1,4 @@
-package ParteA.Manejo.Excepciones.OperacionesDeManejoDeExcepciones;
+package ParteA.Manejo.Excepciones.OperacionesDeManejoDeExcepciones1_5;
 public class OperacionesdeManejoDeExcepciones{
 
     public static void VerificaciónDeContraseña(String contraseña)  throws Exception{
