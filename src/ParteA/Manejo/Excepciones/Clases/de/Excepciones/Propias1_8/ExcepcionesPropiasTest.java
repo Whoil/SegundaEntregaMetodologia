@@ -20,7 +20,7 @@ public class ExcepcionesPropiasTest {
             VerificaciónDeContraseña("Alban55");
         }
         catch (ContrasenaIncorrectaException ex){
-            ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }
     }
     public static void ProbarVerificaciónEdad(){
@@ -28,7 +28,7 @@ public class ExcepcionesPropiasTest {
             VerificacionEdad(-5);
         }
         catch (EdadInvalidaException ex){
-            ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }
     }
 

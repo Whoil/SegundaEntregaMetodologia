@@ -27,12 +27,19 @@ public class Main {
 
         System.out.println("== 1.2 Pila De Llamadas ==");
        MethodCallStackDemo.main(new String[0]);
+       try{
+           MethodCallStackDemoArithmeticException.main(new String[0]);
+       }catch(Exception ex){
+           System.out.println("ArithmeticException");
+           System.out.println(ex.getMessage());
+       }
 
 
        try{
            MethodCallStackDemoArithmeticException.main(new String[0]);
        }catch (Exception ex){
-           ex.printStackTrace();
+           System.out.println("ArithmeticException");
+           System.out.println(ex.getMessage());
        }
 
         System.out.println("\n===== 1.5 OPERACIONES DE MANEJO DE EXCEPCIONES =====");
@@ -51,7 +58,8 @@ public class Main {
         try {
             MethodCallStackDemoWithFinally.main(new String[0]);
         } catch (Exception ex) {
-            ex.printStackTrace();
+            System.out.println("ArithmeticException");
+            System.out.println(ex.getMessage());
         }
 
         System.out.println("\n===== 1.7 EXCEPCIONES COMUNES =====");

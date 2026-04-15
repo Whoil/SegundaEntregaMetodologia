@@ -15,7 +15,7 @@ public class MyMagicExceptionTest {
             magic(9);   // does not trigger exception
             magic(8);   // trigger exception
         } catch (MyMagicException ex) {   // exception handler
-            ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }
     }
 }

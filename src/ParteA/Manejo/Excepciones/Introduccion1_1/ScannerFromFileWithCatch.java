@@ -10,7 +10,7 @@ public class ScannerFromFileWithCatch {
             System.out.println("Fichero abierto correctamente");
             in.close();
         } catch (FileNotFoundException ex) { // error handling separated from the main logic
-            ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }
     }
 
