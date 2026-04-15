@@ -1,4 +1,4 @@
-package ParteB.Persistencia.de.Datos;
+package ParteB.Persistencia.De.Datos;
 
 import com.google.gson.Gson;
 import java.io.FileReader;

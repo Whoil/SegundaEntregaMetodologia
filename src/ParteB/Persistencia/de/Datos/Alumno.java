@@ -1,4 +1,4 @@
-package ParteB.Persistencia.de.Datos;
+package ParteB.Persistencia.De.Datos;
 
 public class Alumno {
 

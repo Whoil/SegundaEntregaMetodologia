@@ -1,7 +1,6 @@
-package ParteB.Persistencia.de.Datos;
+package ParteB.Persistencia.De.Datos;
 
 import com.google.gson.Gson;
-import ParteB.Persistencia.de.Datos.Persona;
 
 public class Main2 {
     public static void main(String[] args) {
