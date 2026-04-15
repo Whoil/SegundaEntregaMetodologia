@@ -1,3 +1,4 @@
+import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFile;
 import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFileWithCatch;
 import ParteA.Manejo.Excepciones.Introduccion1_1.ScannerFromFileWithThrow;
 
@@ -15,7 +16,54 @@ import ParteA.Manejo.Excepciones.Clases.de.Excepciones.Propias1_8.ExcepcionesPro
 
 public class Main {
     public static void main(String[] args){
+        System.out.println("== 1.1 Introducción ==");
+        ScannerFromFileWithCatch.main(new String[0]);
+
+        try{
+            ScannerFromFileWithThrow.main(new String[0]);
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+
+        System.out.println("== 1.2 Pila De Llamadas ==");
+       MethodCallStackDemo.main(new String[0]);
 
 
+       try{
+           MethodCallStackDemoArithmeticException.main(new String[0]);
+       }catch (Exception ex){
+           ex.printStackTrace();
+       }
+
+        System.out.println("\n===== 1.5 OPERACIONES DE MANEJO DE EXCEPCIONES =====");
+        OperacionesdeManejoDeExcepciones.ProbarConCatch();
+
+        try {
+            OperacionesdeManejoDeExcepciones.ProbarConThrow();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        System.out.println("\n===== 1.6 TRY-CATCH-FINALLY =====");
+        TryCatchFinallyPrimerEjemplo.main(new String[0]);
+
+        try {
+            MethodCallStackDemoWithFinally.main(new String[0]);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        System.out.println("\n===== 1.7 EXCEPCIONES COMUNES =====");
+        ExcepcionesComunes.ProbarArrayIndexOutOfBoundsException();
+        ExcepcionesComunes.ProbarNullPointerException();
+        ExcepcionesComunes.ProbarNumberFormatException();
+        ExcepcionesComunes.ProbarClassCastException();
+        ExcepcionesComunes.ProbarIllegalArgumentException(-5);
+        ExcepcionesComunes.ProbarIllegalStateException();
+
+        System.out.println("\n===== 1.8 EXCEPCIONES PROPIAS =====");
+        ExcepcionesPropiasTest.ProbarVerificaciónDeContraseña();
+        ExcepcionesPropiasTest.ProbarVerificaciónEdad();
     }
+
 }
